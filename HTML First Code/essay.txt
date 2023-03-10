@@ -1,0 +1,34 @@
+
+Network Analysis
+1. Google.com
+The experiment for google shows that XHR type request is the slowest part of a page to download before it begins rendering in my browser because the XHR type has the time download highest than others type. The loading time depends on the waiting (TTFB). The result shows that the XHR type has a load time is 319 ms with a size is 346 B. If we compare to others as JS, we will see that JS type has loading time is before XHR type is 288 ms with 207 KB. In this case, the JS type has a size larger than the XHR type, but the waiting (TTFB) is shorter. Therefore, the loading time will faster than the XHR type. The total number of requests is 25 request. The download size is 305 KB transferred. The timing of the DOMContentLoaded is 897 ms, and the load event is 1.29 s. 
+
+2. Youtube.com
+If we compare load events between google.com and Youtube.com, we will see that, Youtube.com has a load event ten times more than google's load event. The result shows that the total number of requests is 69 request. The download size is 1.7 MB transferred. The timing of the DOMContentLoaded is 10.97 s, and the load event is 11.54 s. The slowest part of a page to download before it begins rendering in my browser is requested by image type. In this case, waiting (TTFB) does not take much time of total time. Most of the time is Content Download 7.68 s. Therefore, this part is the most affected loading event of the webpage. Compare to other types, such as documents. It has a time is 743 ms because it has Content Download shorter than image type. 
+
+3. Amazon.com
+Amazon.com has 345 requests, 1.8 MB transferred, DOMContentLoaded is 3.03 s, load event is 5.24 s. The slowest part of a page to download before it begins rendering in my browser is text/plain. It took 703 ms to download to the webpage. It has 263 B size. Most of its time is waiting (TTFB). 
+
+4. Yahoo.com
+The experiment for Yahoo shows that there are 564 requests, 3.5 MB transferred, DOMContentLoaded is 2.81 s, and load event is 8.88 s. Imagepixel.gif is the slowest part of a page to download before it begins rendering in my browser because it contains image 501 B of size, and loading time is 793 ms. Most of its time is waiting (TTFB): 426.39 ms, initial connection: 339.05 ms, and SSL: 184.32 ms. This result shows that waiting (TTFB) has the most effective to the loading time of this part. 
+
+5. Zoom.us
+The experiment results show that Zoom.com has 267 requests, 375 KB transferred, DOMContentLoaded is 1.77 s, load event is 4.36 s. Type png is the slowest part of a page. It took 2.06 s to download before it begins redering in the the browser. Content Download is content part that took highest time than other parts. 
+
+6. Facebook.com
+With facebook.com, we can see the load event is 1.18 s. The load event is relatively shorter than pages like google.com, Youtube.com, Amazon.com, Yahoo.com, and Zoom.us. In this experiment, we can see 46 requests, 32.4 KB transferred, DOMContentLoaded is 614 ms, and load event is 1.18 s. www.facebook.com contains a document that has 31.5 KB and a loading time is 136 ms. It is the slowest loading part of the page. The reasons are the time of Waiting (TTFB) took too long, then is the initial connection, and finally is SSL. The browser is waiting for the first byte of a response.
+
+7. Reddit.com
+Reddit.com has the load event relatively long is 10.71 s. The results show that 192 requests, 1.2 MB transferred, DOMContentLoaded is 2.32 s, and load event is 10.71 s. CommunityIcon_kbvvvwws4qv51.png contains the images that are the slowest part of a page to download with disk cache size and loading time is 8.87 s. It is the most affected part of the page. Mostly is Content Download took about 8.87 s. If we compare to other websites, we can see that most of them have affected time by containing the images. The loading time can short or longer depending on the content of the page. What the request types are. 
+
+8. Wikipedia.com
+Wikipedia.com is a webpage that has the shortest event load. The experiment shows that there are six requests, 54 B transferred, DOMContentLoaded is 198 ms, and load event is 268 ms. www.wikipedia.com is a part slowest loading of a page. It has 54 B of size, document type, and loading time is 101 ms. It is included waiting (TTFB). Therefore, if there are not many requests and numbers transferred, the loading time will be shorter. It is a reason that affects the load event.  
+
+9. shopify.com
+Shopify.com has 94 requests, 51.2 KB transferred, DOMContentLoaded is 1.62 s, and load event is 1.86 s. The slowest part of a page to download before it begins rendering in my browser with status 304 is Redirect type, initiator is insight.min.js:1, and time is 685 ms. Most of loading time of this part is Content Download. It is 630.39 ms. It means the browser is receiving the response. If the browser receives a response soon, the load time will be shortened. Otherwise, the load time will be longer. It also means that this is the reason why this website is slow to load.
+
+10. Ebay.com
+The experiment for Ebay.com shows 190 requests, 2.0 MB transferred, DOMContentLoaded is 1.52 s, and load event is 1.81 s. Type request XHR has 11.1 KB, 666 ms loading time. The part loading slowest before it begins rendering in the browser is waiting (TTFB). It is also the reason that many websites encounter. 
+
+The result:
+Depending on the request type, such as the XHR, JS, CSS, Img, Media, Font, Doc, WS (WebSocket) will have loading time different. Waiting (TTFB), Initial connection, SSL, and Content Download are some of the main reasons that affected the slow loading of web pages. 
